@@ -289,7 +289,7 @@ a.active {
 ==================================================*/
 
 #home {
-    background: url(../img/home-bg-2.jpg);
+    background: url(../img/slo.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -301,7 +301,7 @@ a.active {
 
 .disply-table {
     display: table;
-    height: 100vh;
+    height: 55vh;
 }
 
 
