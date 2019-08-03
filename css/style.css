@@ -313,16 +313,16 @@ a.active {
 }
 
 .about-img-div img {
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .about-border {
     position: absolute;
     border: 10px solid #425BB5;
-    width: 400px;
-    height: 400px;
-    top: 40px;
-    left: 50px;
+    width: 415px;
+    height: 310px;
+    top: 0px;
+    left: 150px;
     z-index: 1
 }
 
