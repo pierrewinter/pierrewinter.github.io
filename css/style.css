@@ -312,17 +312,17 @@ a.active {
     padding: 100px 0;
 }
 
-.about-img-div img {
-    margin: 10px auto;
+#about-img-div img {
+    margin: 100px auto;
 }
 
 .about-border {
-    position: absolute;
+    position: relative;
     border: 10px solid #425BB5;
-    width: 415px;
-    height: 310px;
-    top: 0px;
-    left: 150px;
+    width: 420px;
+    height: 320px;
+    top: -10px;
+    left: 130px;
     z-index: 1
 }
 
