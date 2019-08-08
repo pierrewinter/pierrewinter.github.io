@@ -315,14 +315,15 @@ a.active {
 #about-img-div img {
     margin: 100px auto;
 }
-
+/*#TODO: fix image border for phone/tablet viewing*/
 .about-border {
     position: relative;
     border: 10px solid #425BB5;
     width: 420px;
     height: 320px;
     top: -10px;
-    left: 130px;
+    /*left: 130px;*/
+    left: 10px;
     z-index: 1
 }
 
