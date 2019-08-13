@@ -70,6 +70,34 @@ h4:before {
     top: 9px;
 }
 
+h5 {
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    color: #425BB5;
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h5:before {
+    position: absolute;
+    width: 30px;
+    left: -40px;
+    content: "";
+    display: block;
+    height: 2px;
+    background: #425BB5;
+    top: 16px;
+}
+
+h6 {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    line-height: 70px;
+    color: #fff;
+}
 
 /* General
 ==================================================*/
@@ -322,8 +350,8 @@ a.active {
     width: 420px;
     height: 320px;
     top: -10px;
-    /*left: 130px;*/
-    left: 10px;
+    left: 130px;
+    /*left: 10px;*/
     z-index: 1
 }
 
