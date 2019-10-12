@@ -355,6 +355,8 @@ a.active {
     z-index: 1
 }
 
+.profile { border-width: 5px; border-color: #425BB5; border-style: solid; }
+
 
 /* experience section
 ==================================================*/
@@ -663,6 +665,7 @@ a.active {
     line-height: 50px;
 }
 
+.pierreborder { border-width: 5px; border-color: #425BB5; border-style: solid; }
 
 /* contact
 ==================================================*/
