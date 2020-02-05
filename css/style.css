@@ -541,6 +541,9 @@ h1new {
     overflow: hidden;
     display: block;
     margin-bottom: 30px;
+    border-width: 5px;
+    border-color: #425BB5;
+    border-style: solid;
 }
 
 .portfolio_item .portfolio_item_hover {
@@ -628,8 +631,8 @@ h1new {
 }
 
 .portfolio_item img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
 }
 
 .portfolio-padding {
@@ -653,7 +656,7 @@ h1new {
 .close-popup-modal {
     float: right;
     margin: 20px;
-    font-size: 22px;
+    font-size: 32px;
     opacity: 0;
     cursor: pointer;
     -webkit-transition: all .3s;
