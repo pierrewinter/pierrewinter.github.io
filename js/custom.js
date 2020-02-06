@@ -117,7 +117,7 @@ $(document).ready(function () {
             rules: {
                 name: {
                     required: true,
-                    minlength: 2
+                    // minlength: 2
                 },
                 email: {
                     required: true
@@ -133,7 +133,7 @@ $(document).ready(function () {
             messages: {
                 name: {
                     required: "This field is required",
-                    minlength: "your name must consist of at least 2 characters"
+                    // minlength: "your name must consist of at least 2 characters"
                 },
                 email: {
                     required: "This field is required"
