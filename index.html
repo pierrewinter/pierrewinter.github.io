@@ -118,7 +118,6 @@
                                 <li>Engineered Python code to parallelize memory-intensive calculations on computing clusters.</li>
                                 <li>Taught university classes and managed student research projects in a multilingual setting.</li>
                                 </ul>
-                            </p>
                         </div>
                     </li>
                     <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
@@ -133,7 +132,6 @@
                                 <li>Provided computational and theoretical support for international research projects.</li>
                                 <li>Published results in top journals and communicated findings to diverse conference audiences.</li>
                                 </ul>
-                            </p>
                         </div>
                     </li>
                     <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
@@ -147,7 +145,6 @@
                                 <li>Formulated, tested, and scaled-up production of a novel medical device that is now in the market for patients with life-threatening vascular malformations. </li>
                                 <li>Collected, analyzed, and communicated scientific data that were critical to business decisions.</li>
                                 </ul>
-                            </p>
                         </div>
                     </li>
                 </ul>
@@ -171,7 +168,6 @@
                                 <li>Developed and applied imputation methods for sparse data sets containing market prices.</li>
                                 <li>Addressed the need for more accurate cash-based humanitarian assistance in conflict regions.</li>
                                 </ul>
-                            </p>
                         </div>
                     </li>
                     <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
@@ -184,7 +180,6 @@
                                 <li>Initiated a nonprofit association that provides awareness and support for improving mental health across academic institutions in Switzerland.</li>
                                 <li>Collaborated with both industry and academic partners to provide resource channels for academics seeking aid.</li>
                                 </ul>
-                            </p>
                         </div>
                     </li>
 <!--                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".6">-->
@@ -408,24 +403,93 @@
                 <div class="clearfix"></div>
                 <div class="h-50"></div>
             </div>
+
+            <!-- contact form with back-end using Formspree -->
             <div class="col-md-8" data-aos="fade-up">
-                <form class="contact-bg" id="contact-form" name="contact" method="post" novalidate="novalidate">
+                <form class="contact-bg" id="contact-form" name="contact" action="https://formspree.io/mwkonkgn" method="POST" novalidate="novalidate">
                     <input type="text" name="name" class="form-control" placeholder="Your Name" />
                     <input type="email" name="email" class="form-control" placeholder="Your E-mail" />
                     <input type="text" name="phone" class="form-control" placeholder="Phone Number" />
                     <textarea name="message" class="form-control" placeholder="Your Message" style="height:120px"></textarea>
                     <button id="submit" type="submit" name="submit" class="btn btn-glance">Send</button>
-                    <div id="success">
-                        <p class="green textcenter"> Your message was sent successfully! I will be in touch as soon as possible. </p>
-                    </div>
-                    <div id="error">
-                        <p> Something went wrong, try refreshing and submitting the form again. </p>
-                    </div>
                 </form>
             </div>
         </div>
     </div>
     <!-- ./contact -->
+
+
+
+    <div id="animatedModal" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-1" class="close-animatedModal close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Price Imputation Model - Coming Soon!<br /></h2>
+                        <div class="h-50"></div>
+                        <p></p>
+                        <br />
+                        <br /> <img src="img/portfolio/02.jpg" alt="" class="img-responsive" />
+                        <br />
+                        <br />
+                        <p></p>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="animatedModal2" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-2" class="close-animatedModal2 close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Gaussian Process Regression - Coming Soon!<br /></h2>
+                        <div class="h-50"></div>
+                        <p></p>
+                        <br />
+                        <br /> <img src="img/portfolio/02.jpg" alt="" class="img-responsive" />
+                        <br />
+                        <br />
+                        <p></p>
+                        <br />
+                        <br /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="animatedModal3" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-3" class="close-animatedModal3 close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Recommendation System - Coming Soon!<br /></h2>
+                        <div class="h-50"></div>
+                        <p></p>
+                        <br />
+                        <br /> <img src="img/portfolio/02.jpg" alt="" class="img-responsive" />
+                        <br />
+                        <br />
+                        <p></p>
+                        <br />
+                        <br /></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -439,84 +503,8 @@
     <!--  main script  -->
     <script src="js/custom.js"></script>
 
-
-
-<div id="animatedModal" class="popup-modal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-    <div id="btn-1" class="close-animatedModal close-popup-modal"> <i class="ion-close-round"></i> </div>
-    <div class="clearfix"></div>
-    <div class="modal-content">
-        <div class="container">
-            <div class="portfolio-padding">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2>Price Imputation Model - Coming Soon!<br /></h2>
-                    <div class="h-50"></div>
-                    <p></p>
-                    <br />
-                    <br /> <img src="img/portfolio/02.jpg" alt="" class="img-responsive" />
-                    <br />
-                    <br />
-                    <p></p>
-                    <br />
-                    <br />
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div id="animatedModal2" class="popup-modal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-    <div id="btn-2" class="close-animatedModal2 close-popup-modal"> <i class="ion-close-round"></i> </div>
-    <div class="clearfix"></div>
-    <div class="modal-content">
-        <div class="container">
-            <div class="portfolio-padding">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2>Gaussian Process Regression - Coming Soon!<br /></h2>
-                    <div class="h-50"></div>
-                    <p></p>
-                    <br />
-                    <br /> <img src="img/portfolio/02.jpg" alt="" class="img-responsive" />
-                    <br />
-                    <br />
-                    <p></p>
-                    <br />
-                    <br />
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="animatedModal3" class="popup-modal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-    <div id="btn-3" class="close-animatedModal3 close-popup-modal"> <i class="ion-close-round"></i> </div>
-    <div class="clearfix"></div>
-    <div class="modal-content">
-        <div class="container">
-            <div class="portfolio-padding">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2>Recommendation System - Coming Soon!<br /></h2>
-                    <div class="h-50"></div>
-                    <p></p>
-                    <br />
-                    <br /> <img src="img/portfolio/02.jpg" alt="" class="img-responsive" />
-                    <br />
-                    <br />
-                    <p></p>
-                    <br />
-                    <br />
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 </body>
 
 </html>
 
 <!--TODO: Find way to make close button appear for all modals after first  -->
-<!--TODO: Ensure contact box works  -->
