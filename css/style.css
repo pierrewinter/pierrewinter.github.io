@@ -322,6 +322,7 @@ a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    width: 99%;
     height: 100vh;
     /*z-index: -1;*/
 }
