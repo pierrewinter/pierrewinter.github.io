@@ -318,6 +318,8 @@ a.active {
 
 #home {
     background: url(../img/slo.jpg);
+    z-index:-1;
+    position: page;
     background-size: cover;
     height: 100vh;
 }
