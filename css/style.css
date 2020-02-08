@@ -322,20 +322,8 @@ a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    width: 99%;
     height: 100vh;
-    /*z-index: -1;*/
 }
-
-/*.h1new {*/
-/*    font-family: 'Playfair Display', serif;*/
-/*    font-size: 80px;*/
-/*    line-height: 70px;*/
-/*    color: black;*/
-/*    -webkit-text-fill-color: black; !* Will override color (regardless of order) *!*/
-/*    -webkit-text-stroke-width: 0.5px;*/
-/*    -webkit-text-stroke-color: white;*/
-/*}*/
 
 .table-cell {
     display: table-cell;
@@ -654,9 +642,9 @@ a.active {
     border: none;
 }
 
-.popup-modal {
-    background: #fff;
-}
+/*.popup-modal {*/
+/*    background: #fff;*/
+/*}*/
 
 .close-popup-modal {
     float: right;
@@ -683,7 +671,24 @@ a.active {
     line-height: 50px;
 }
 
-.pierreborder { border-width: 5px; border-color: #425BB5; border-style: solid; }
+[class*="close-animatedModal"] {
+  border: 2px solid;
+  border-radius: 100%;
+  /*color: #000000;*/
+  /*color: #fff;*/
+  color: #425BB5;
+  cursor: pointer;
+  display: block;
+  font-size: 1.75em;
+  height: 50px;
+  line-height: 46px;
+  margin: 0.3em;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+    left: 88%;
+  width: 50px;
+}
 
 /* contact
 ==================================================*/

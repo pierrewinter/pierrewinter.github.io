@@ -8,7 +8,7 @@ $(window).load(function () {
     $('body').delay(350).css({
         'overflow': 'visible'
     });
-})
+});
 
 $(document).ready(function () {
     "use strict";
@@ -105,9 +105,90 @@ $(document).ready(function () {
 
     //animatedModal
     // $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
-    $("#demo01").animatedModal({modalTarget:'animatedModal'});
-    $("#demo02").animatedModal({modalTarget:'animatedModal2'});
-    $("#demo03").animatedModal({modalTarget:'animatedModal3'});
+    // $("#demo01").animatedModal({modalTarget:'animatedModal'});
+    // $("#demo02").animatedModal({modalTarget:'animatedModal2'});
+    // $("#demo03").animatedModal({modalTarget:'animatedModal3'});
+    //
+    // $(document).ready(function() {
+
+  //demo 01
+  $("#demo01").animatedModal({
+      modalTarget: 'animatedModal',
+    // animatedIn: 'zoomIn',
+    // animatedOut: 'bounceOut',
+    // color: '#425BB5',
+      color: '#fff',
+    beforeOpen: function() {
+      var children = $(".thumb");
+      var index = 0;
+      function addClassNextChild() {
+        if (index == children.length) return;
+        children.eq(index++).show().velocity("transition.expandIn", {
+          opacity: 1,
+          stagger: 250
+        });
+        window.setTimeout(addClassNextChild, 200);
+      }
+      addClassNextChild();
+    },
+    afterClose: function() {
+      $(".thumb").hide();
+    }
+  });
+
+  //demo 02
+  $("#demo02").animatedModal({
+    modalTarget: 'animatedModal2',
+    // animatedIn: 'lightSpeedIn',
+    // animatedOut: 'bounceOutDown',
+    // color: '#425BB5',
+      color: '#fff',
+    beforeOpen: function() {
+      var children = $(".thumb");
+      var index = 0;
+      function addClassNextChild() {
+        if (index == children.length) return;
+        children.eq(index++).show().velocity("transition.slideRightIn", {
+          opacity: 1,
+          stagger: 450,
+          defaultDuration: 100
+        });
+        window.setTimeout(addClassNextChild, 100);
+      }
+      addClassNextChild();
+    },
+    afterClose: function() {
+      $(".thumb").hide();
+    }
+  });
+
+  //demo 03
+  $("#demo03").animatedModal({
+    modalTarget: 'animatedModal3',
+    // animatedIn: 'bounceInUp',
+    // animatedOut: 'bounceOutDown',
+    // color: '#425BB5',
+      color: '#fff',
+    animationDuration: '.5s',
+    beforeOpen: function() {
+      var children = $(".thumb");
+      var index = 0;
+      function addClassNextChild() {
+        if (index == children.length) return;
+        children.eq(index++).show().velocity("transition.slideUpIn", {
+          opacity: 1,
+          stagger: 450,
+          defaultDuration: 100
+        });
+        window.setTimeout(addClassNextChild, 100);
+      }
+      addClassNextChild();
+    },
+    afterClose: function() {
+      $(".thumb").hide();
+    }
+  });
+
 
     // Contact Form
 
