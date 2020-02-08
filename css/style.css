@@ -319,20 +319,19 @@ a.active {
 #home {
     background: url(../img/slo.jpg);
     z-index:-1;
-    position: page;
     background-size: cover;
     height: 100vh;
 }
 
-h1new {
-    font-family: 'Playfair Display', serif;
-    font-size: 80px;
-    line-height: 70px;
-    color: black;
-    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: white;
-}
+/*.h1new {*/
+/*    font-family: 'Playfair Display', serif;*/
+/*    font-size: 80px;*/
+/*    line-height: 70px;*/
+/*    color: black;*/
+/*    -webkit-text-fill-color: black; !* Will override color (regardless of order) *!*/
+/*    -webkit-text-stroke-width: 0.5px;*/
+/*    -webkit-text-stroke-color: white;*/
+/*}*/
 
 .table-cell {
     display: table-cell;
@@ -355,7 +354,7 @@ h1new {
 #about-img-div img {
     margin: 100px auto;
 }
-/*#TODO: fix image border for phone/tablet viewing*/
+
 .about-border {
     position: relative;
     border: 10px solid #425BB5;
