@@ -317,7 +317,7 @@ a.active {
 ==================================================*/
 
 #home {
-  background: url(../img/slo.jpg) no-repeat 0px 0px fixed;
+  background: url(../img/slo.jpg);
   /*-webkit-background-size: cover;*/
   /*-moz-background-size: cover;*/
   /*-o-background-size: cover;*/
@@ -686,7 +686,7 @@ a.active {
   overflow: hidden;
   padding: 0;
   position: relative;
-    left: 88%;
+    left: 80%;
   width: 50px;
 }
 
