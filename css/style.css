@@ -317,10 +317,13 @@ a.active {
 ==================================================*/
 
 #home {
-    background: url(../img/slo.jpg);
-    z-index:-1;
-    background-size: cover;
+  background: url(../img/slo.jpg) no-repeat 0px 0px fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     height: 100vh;
+    /*z-index: -1;*/
 }
 
 /*.h1new {*/
