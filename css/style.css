@@ -47,6 +47,7 @@ h2 {
     font-size: 80px;
     text-transform: capitalize;
     line-height: 70px;
+    text-align: center;
 }
 
 h4 {
@@ -688,6 +689,38 @@ a.active {
   position: relative;
     left: 80%;
   width: 50px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /*color: #425BB5;*/
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 4px solid #425BB5;
+}
+.separator::before {
+    margin-right: 0.9em;
+}
+.separator::after {
+    margin-left: 0.9em;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.centersmall {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
 }
 
 /* contact

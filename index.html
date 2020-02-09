@@ -304,27 +304,54 @@
     <!-- ./contact -->
 
     <div id="animatedModal">
-<!--        <p style="text-align: center;"><span style="text-align: center; display: inline-block;" class="fa fa-pencil" aria-hidden="true"></span></p>-->
         <div class="close-animatedModal"> <p style="text-align: center;"> <span class="fa fa-close"></span> </p> </div>
-            <div class="modal-content">
-                <div class="container">
-                    <div class="portfolio-padding">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2>Price Imputation Model<br /></h2>
-                            <div class="h-50"></div>
-                            <p></p>
-                            <br />  testing text
-                            <br /><a href="https://www.impact-initiatives.org/"> IMPACT</a>
-                            <br /><a href="https://github.com/pierrewinter/Market_Imputation_for_Humanitarian_Aid"> Click here for github</a>
-                            <br /><a href="https://analytics-club.org/hack4good2019H"> Click here for website</a>
-                            <br /><a href="img/portfolio/imputation_report.pdf"> Click here for pdf</a>
-                            <br /> <img src="img/portfolio/02.jpg" alt="" class="img-responsive" />
-                            <br />
-                            <br />
-                            <p></p>
-                            <br />
-                            <br />
-                        </div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Price Imputation Model<br /></h2>
+                        <br />
+                        <br />
+                        <div class="separator"><strong>THE BUSINESS PROBLEM</strong></div>
+                        <br />
+                        <p> Humanitarian aid organizations are unable to provide accurate
+                        cash-based assistance in conflict regions. This is often due to the lack of pricing information for basic
+                        necessities found in local markets. How can we estimate missing prices of market goods in Syria such that
+                        families in need are given an adequate amount of aid?</p>
+                        <br />
+                        <div class="separator"><strong>RESOURCES</strong></div>
+                        <br />
+                        <p> This project was performed as part of the Hack4Good Program hosted by the
+                        <a href="https://analytics-club.org/hack4good2019H"> Analytics Club</a> at ETH Z&uuml;rich. My team consisted of 3 other
+                        university students of varying backgrounds, all of whom I had met for the first time. We were given 8 weeks to provide a
+                        data analytics solution for our partner NGO, <a href="https://www.impact-initiatives.org/"> IMPACT Initiatives</a>, who
+                        provided us with a sparse and unstructured dataset containing monthly market prices for regions across Syria.</p>
+                        <br />
+                        <p><img src="img/sparse.png" alt="" class="img-responsive center" /></p>
+                        <br />
+                        <div class="separator"><strong>SOLUTION</strong></div>
+                        <br />
+                        <p> Of the methods tested, we found two which proved to be most effective and which
+                        showed the smallest nRMSE error after cross-validation: Adapted k-Nearest Neighbors (k-NN) and Multiple Imputation
+                        by Chained Equations (MICE). These approaches group the market price data in a hierarchical way such that
+                        time-series analysis was performed before geographical grouping.</p>
+                        <br />
+                        <p><img src="img/mice.png" alt="" class="img-responsive center" /></p>
+                        <br />
+                        <div class="separator"><strong>IMPACT</strong></div>
+                        <br />
+                        <p> The solution we propose is simple and generalizable such that it can be implemented
+                        with minimal costs and in other regions of conflict. We provided IMPACT Initiatives with software written in Python and
+                        R as well as a more structured and fully imputed dataset. We hope that they can use this work to better
+                            inform the amount of assistance needed by these families. </p>
+                        <br />
+                        <p><img src="img/impact.png" alt="" class="img-responsive centersmall" /></p>
+                        <br />
+                        <br />
+                        <br /> The final report can be viewed <a href="img/portfolio/imputation_report.pdf"> here</a> and for any more
+                        information please visit the project on<a href="https://github.com/pierrewinter/Market_Imputation_for_Humanitarian_Aid"> GitHub</a>.
+                        <br />
+                        <br />
                     </div>
                 </div>
             </div>
@@ -333,20 +360,53 @@
 
     <div id="animatedModal2">
         <div class="close-animatedModal2"> <p style="text-align: center;"> <span class="fa fa-close"></span> </p> </div>
-            <div class="modal-content">
-                <div class="container">
-                    <div class="portfolio-padding">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2>Gaussian Process Regression<br /></h2>
-                            <div class="h-50"></div>
-                            <p></p>
-                            <br />  testing text
-                            <br />
-                            <br />
-                            <p></p>
-                            <br />
-                            <br />
-                        </div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Gaussian Process Regression<br /></h2>
+                        <br />
+                        <br />
+                        <div class="separator"><strong>THE BUSINESS PROBLEM</strong></div>
+                        <br />
+                        <p> Calculating the chemical energy of molecules in an accurate way is extremely time consuming,
+                            even when using state-of-the-art methods on powerful computers. This can be attributed to
+                            the poor scaling of computation time with respect to the number of atoms in the system.
+                            How can we obtain accurate chemical energies while reducing the number of expensive computations?</p>
+                        <br />
+                        <div class="separator"><strong>RESOURCES</strong></div>
+                        <br />
+                        <p> This project was performed as part of the Hack4Good Program hosted by the
+                        <a href="https://analytics-club.org/hack4good2019H"> Analytics Club</a> at ETH Z&uuml;rich. My team consisted of 3 other
+                        university students of varying backgrounds, all of whom I had met for the first time. We were given 8 weeks to provide a
+                        data analytics solution for our partner NGO, <a href="https://www.impact-initiatives.org/"> IMPACT Initiatives</a>, who
+                        provided us with a sparse and unstructured dataset containing monthly market prices for regions across Syria.</p>
+                        <br />
+                        <p><img src="img/sparse.png" alt="" class="img-responsive center" /></p>
+                        <br />
+                        <div class="separator"><strong>SOLUTION</strong></div>
+                        <br />
+                        <p> Of the methods tested, we found two which proved to be most effective and which
+                        showed the smallest nRMSE error after cross-validation: Adapted k-Nearest Neighbors (k-NN) and Multiple Imputation
+                        by Chained Equations (MICE). These approaches group the market price data in a hierarchical way such that
+                        time-series analysis was performed before geographical grouping.</p>
+                        <br />
+                        <p><img src="img/mice.png" alt="" class="img-responsive center" /></p>
+                        <br />
+                        <div class="separator"><strong>IMPACT</strong></div>
+                        <br />
+                        <p> The solution we propose is simple and generalizable such that it can be implemented
+                        with minimal costs and in other regions of conflict. We provided IMPACT Initiatives with software written in Python and
+                        R as well as a more structured and fully imputed dataset. We hope that they can use this work to better
+                            inform the amount of assistance needed by these families. </p>
+                        <br />
+                        <p><img src="img/impact.png" alt="" class="img-responsive centersmall" /></p>
+                        <br />
+                        <br />
+                        <br /> The final report can be viewed <a href="img/portfolio/imputation_report.pdf"> here</a> and for any more
+                        information please visit the project on<a href="https://github.com/pierrewinter/Market_Imputation_for_Humanitarian_Aid"> GitHub</a>.
+                        <br />
+                        <br />
                     </div>
                 </div>
             </div>
@@ -355,20 +415,19 @@
 
     <div id="animatedModal3">
         <div class="close-animatedModal3"> <p style="text-align: center;"> <span class="fa fa-close"></span> </p> </div>
-            <div class="modal-content">
-                <div class="container">
-                    <div class="portfolio-padding">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2>Recommendation System<br /></h2>
-                            <div class="h-50"></div>
-                            <p></p>
-                            <br />  testing text
-                            <br />
-                            <br />
-                            <p></p>
-                            <br />
-                            <br />
-                        </div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Recommendation System<br /></h2>
+                        <div class="h-50"></div>
+                        <p></p>
+                        <br />  testing text
+                        <br />
+                        <br />
+                        <p></p>
+                        <br />
+                        <br />
                     </div>
                 </div>
             </div>
@@ -387,3 +446,5 @@
 </body>
 
 </html>
+
+<!--TODO: fix project image sizes when viewing on rotated smartphone-->
