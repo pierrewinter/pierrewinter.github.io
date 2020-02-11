@@ -349,7 +349,7 @@
                         <br />
                         <br />
                         <br /> The final report can be viewed <a href="img/portfolio/imputation_report.pdf"> here</a> and for any more
-                        information please visit the project on<a href="https://github.com/pierrewinter/Market_Imputation_for_Humanitarian_Aid"> GitHub</a>.
+                        information please visit the project on my<a href="https://github.com/pierrewinter/Market_Imputation_for_Humanitarian_Aid"> GitHub</a>.
                         <br />
                         <br />
                     </div>
@@ -376,35 +376,35 @@
                         <br />
                         <div class="separator"><strong>RESOURCES</strong></div>
                         <br />
-                        <p> This project was performed as part of the Hack4Good Program hosted by the
-                        <a href="https://analytics-club.org/hack4good2019H"> Analytics Club</a> at ETH Z&uuml;rich. My team consisted of 3 other
-                        university students of varying backgrounds, all of whom I had met for the first time. We were given 8 weeks to provide a
-                        data analytics solution for our partner NGO, <a href="https://www.impact-initiatives.org/"> IMPACT Initiatives</a>, who
-                        provided us with a sparse and unstructured dataset containing monthly market prices for regions across Syria.</p>
+                        <p> This project was completed as part of my independent doctoral research at
+                            <a href="https://www.richardson.ethz.ch/"> ETH Z&uuml;rich</a>. I was fortunate to have
+                            access to the academic computing cluster which allowed me to perform these expensive chemistry calculations
+                            in a reasonable amount of time.</p>
                         <br />
-                        <p><img src="img/sparse.png" alt="" class="img-responsive center" /></p>
+                        <p><img src="img/cluster.jpg" alt="" class="img-responsive center" /></p>
                         <br />
                         <div class="separator"><strong>SOLUTION</strong></div>
                         <br />
-                        <p> Of the methods tested, we found two which proved to be most effective and which
-                        showed the smallest nRMSE error after cross-validation: Adapted k-Nearest Neighbors (k-NN) and Multiple Imputation
-                        by Chained Equations (MICE). These approaches group the market price data in a hierarchical way such that
-                        time-series analysis was performed before geographical grouping.</p>
+                        <p> In order to reduce the number of computations of the chemical energy (as well as its
+                        first and second derivatives), my solution included only calculating the energy and its derivatives
+                            at a few points along a multidimensional reaction pathway and using a regression technique to interpolate new points.
+                            This was done with a kernel-based machine learning approach called Gaussian Process Regression. I
+                            used this approach to drastically reduce the number of expensive calculations needed and obtained
+                        interesting scientific results which would otherwise be unattainable.</p>
                         <br />
-                        <p><img src="img/mice.png" alt="" class="img-responsive center" /></p>
+                        <p><img src="img/kriging.png" alt="" class="img-responsive center" /></p>
                         <br />
                         <div class="separator"><strong>IMPACT</strong></div>
                         <br />
-                        <p> The solution we propose is simple and generalizable such that it can be implemented
-                        with minimal costs and in other regions of conflict. We provided IMPACT Initiatives with software written in Python and
-                        R as well as a more structured and fully imputed dataset. We hope that they can use this work to better
-                            inform the amount of assistance needed by these families. </p>
+                        <p> Using Gaussian Process Regression,
+                            I was able to drastically reduce the number of expensive calculations needed and
+                            at the same time I obtained interesting scientific results which would otherwise be unattainable.
+                            The solution is generalizable to most chemical systems and since it is a Bayesian method, it does
+                            not require the manual tuning of function parameters. I also obtained an explicit measure of
+                            the error in predicting new energies.
+                        </p>
                         <br />
                         <p><img src="img/impact.png" alt="" class="img-responsive centersmall" /></p>
-                        <br />
-                        <br />
-                        <br /> The final report can be viewed <a href="img/portfolio/imputation_report.pdf"> here</a> and for any more
-                        information please visit the project on<a href="https://github.com/pierrewinter/Market_Imputation_for_Humanitarian_Aid"> GitHub</a>.
                         <br />
                         <br />
                     </div>
@@ -420,12 +420,47 @@
                 <div class="portfolio-padding">
                     <div class="col-md-8 col-md-offset-2">
                         <h2>Recommendation System<br /></h2>
-                        <div class="h-50"></div>
-                        <p></p>
-                        <br />  testing text
                         <br />
                         <br />
-                        <p></p>
+                        <div class="separator"><strong>THE BUSINESS PROBLEM</strong></div>
+                        <br />
+                        <p> Whether competing with friends recreationally or placing bets professionally, the growth of
+                            fantasy sports has led to the use of data analytics to predict team and player performance.
+                            This can be challenging for complex team sports, especially in fast-paced competitive leagues.
+                            Using simple metrics, how can we predict a top-performing fantasy soccer team in the English
+                            Premier League (EPL)?</p>
+                        <br />
+                        <div class="separator"><strong>RESOURCES</strong></div>
+                        <br />
+                        <p> This is a personal project inspired by my desire to improve my own fantasy soccer scores
+                            when competing with friends. I made use of open-source software such as Python, Jupyter, and
+                            Matplotlib. The fantasy football data was obtained via the official
+                            <a href="https://fantasy.premierleague.com/api/bootstrap-static/"> Fantasy Premier League API</a>.</p>
+                        <br />
+                        <p><img src="img/epl_logo.png" alt="" class="img-responsive center" /></p>
+                        <br />
+                        <div class="separator"><strong>SOLUTION</strong></div>
+                        <br />
+                        <p> As part of my solution I created a return on investment (ROI) measure for all players and
+                        teams in the EPL. The ROI relates the total fantasy points earned by a player over the course of
+                            the 38-week season to their purchase value and their number of minutes played.
+                            From this analysis I was able to easily select
+                            a mixture of high-ROI and high point-producing players within my budget constraints.</p>
+                        <br />
+                        <p><img src="img/player_roi.png" alt="" class="img-responsive center" /></p>
+                        <br />
+                        <div class="separator"><strong>IMPACT</strong></div>
+                        <br />
+                        <p> This project was initially performed during the 2018/2019 EPL season, but the solution I propose can be
+                            easily implemented for future seasons. The Jupyter notebook I created also comes with visualizations
+                        which categorize the most valuable players by their positions. This functionality allows me to quickly and
+                        easily find a valuable replacement for my team should a current player become injured, for example.</p>
+                        <br />
+                        <p><img src="img/goal.jfif" alt="" class="img-responsive centersmall" /></p>
+                        <br />
+                        <br />
+                        <br /> The Jupyter notebook for this project can be found on my
+                        <a href="https://github.com/pierrewinter/API_Fantasy_Player_Recommender"> GitHub</a>.
                         <br />
                         <br />
                     </div>
