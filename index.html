@@ -223,10 +223,10 @@
 
                             <!-- single work -->
                             <div class="col-md-4 col-sm-6">
-                                <a id="demo02" href="#animatedModal2" class="portfolio_item"> <img src="img/criegee.png" alt="image" class="img-responsive" />
+                                <a id="demo04" href="#animatedModal4" class="portfolio_item"> <img src="img/suit_tie.jpg" alt="image" class="img-responsive" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
-                                            <div class="item_info"> <span>Gaussian Process Regression</span> <em>Chemistry</em> </div>
+                                            <div class="item_info"> <span>Job Web Scraper</span> <em>Employment</em> </div>
                                         </div>
                                     </div>
                                 </a>
@@ -239,6 +239,18 @@
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info"> <span>Recommendation System</span> <em>Sports</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6">
+                                <a id="demo02" href="#animatedModal2" class="portfolio_item"> <img src="img/criegee.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Gaussian Process Regression</span> <em>Chemistry</em> </div>
                                         </div>
                                     </div>
                                 </a>
@@ -346,7 +358,7 @@
                             They have communicated that they want to use this in their production level operations
                             in order to better inform the amount of assistance needed by these families. </p>
                         <br />
-                        <p><img src="img/impact.png" alt="" class="img-responsive centersmall" /></p>
+                        <p><img src="img/impact.png" alt="" class="img-responsive center45" /></p>
                         <br />
                         <br />
                         <br /> The final report can be viewed <a href="img/portfolio/imputation_report.pdf"> here</a> and for any more
@@ -457,11 +469,71 @@
                             more manager flexibility such that should a player become injured, a replacement player can
                             easily be found for that corresponding position.</p>
                         <br />
-                        <p><img src="img/goal.jfif" alt="" class="img-responsive centersmall" /></p>
+                        <p><img src="img/goal.jfif" alt="" class="img-responsive center45" /></p>
                         <br />
                         <br />
                         <br /> The Jupyter notebook for this project can be found on my
                         <a href="https://github.com/pierrewinter/API_Fantasy_Player_Recommender"> GitHub</a>.
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="animatedModal4">
+        <div class="close-animatedModal4"> <p style="text-align: center;"> <span class="fa fa-close"></span> </p> </div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Job Web Scraper<br /></h2>
+                        <br />
+                        <br />
+                        <div class="separator"><strong>THE BUSINESS PROBLEM</strong></div>
+                        <br />
+                        <p> As a job-seeker, searching for open positions can be a daunting task given the plethora of
+                            career decisions that need to be made. Finding free time to manually scroll through job
+                            postings also presents constraints which could add to the stress of searching for the right
+                            position. Can publicly available job postings be aggregated and visualized in an automated way?
+                        </p>
+                        <br />
+                        <div class="separator"><strong>RESOURCES</strong></div>
+                        <br />
+                        <p> This is a personal project inspired by my desire to help myself and family members search for
+                            relevant and highly-rated positions and companies by geographic location. I made use of
+                            open-source software such as Python, Requests, BeautifulSoup, and Tableau.
+                        </p>
+                        <br />
+                        <p><img src="img/python_requests.jpg" alt="" class="img-responsive center25" /></p>
+                        <br />
+                        <div class="separator"><strong>SOLUTION</strong></div>
+                        <br />
+                        <p> My solution was to build an easy-to-use web scraper that performs HTTP requests to job
+                            posting websites and parses the publicly available job data. In this particular implementation
+                            I wanted to find up to 500 job listings on Indeed for full-time data scientist positions
+                            within 50 miles of both Los Angeles and San Francisco. The data containing position, company,
+                            city, job posting date, and job rating was parsed and aggregated into a .csv file. This data
+                            was then easily visualized using Tableau to get a good understanding of where the jobs
+                            are located with zip code granularity as well as the spread of job ratings.
+                        </p>
+                        <br />
+                        <p><img src="img/job_listing_map.png" alt="" class="img-responsive center100" /></p>
+                        <br />
+                        <div class="separator"><strong>IMPACT</strong></div>
+                        <br />
+                        <p> As is, this project can currently be used to search for jobs in the U.S. on Indeed's website
+                            and visualize them in a matter of minutes. This helps accelerate the job search process by
+                            automating the extraction of job market data. Extension to other countries and other
+                            job posting websites is simple and a GUI to do this is in progress.
+                        </p>
+                        <br />
+                        <p><img src="img/indeed_logo.png" alt="" class="img-responsive center45" /></p>
+                        <br />
+                        <br />
+                        <br /> The Python code for this project can be found on my
+                        <a href="https://github.com/pierrewinter/Job_Web_Scraper"> GitHub</a>.
                         <br />
                         <br />
                     </div>
