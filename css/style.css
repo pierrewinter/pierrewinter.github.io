@@ -535,7 +535,7 @@ a.active {
     overflow: hidden;
     display: block;
     margin-bottom: 30px;
-    border-width: 5px;
+    border-width: 8px;
     border-color: #425BB5;
     border-style: solid;
 }

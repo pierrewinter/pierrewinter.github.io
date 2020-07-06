@@ -216,6 +216,33 @@ $(document).ready(function () {
     }
   });
 
+    //demo 05
+  $("#demo05").animatedModal({
+    modalTarget: 'animatedModal5',
+    // animatedIn: 'bounceInUp',
+    // animatedOut: 'bounceOutDown',
+    // color: '#425BB5',
+      color: '#fff',
+    animationDuration: '.5s',
+    beforeOpen: function() {
+      var children = $(".thumb");
+      var index = 0;
+      function addClassNextChild() {
+        if (index == children.length) return;
+        children.eq(index++).show().velocity("transition.slideUpIn", {
+          opacity: 1,
+          stagger: 450,
+          defaultDuration: 100
+        });
+        window.setTimeout(addClassNextChild, 100);
+      }
+      addClassNextChild();
+    },
+    afterClose: function() {
+      $(".thumb").hide();
+    }
+  });
+
     // Contact Form
 
     // validate contact form
