@@ -111,6 +111,31 @@ $(document).ready(function () {
     //
     // $(document).ready(function() {
 
+  //demo 00
+  $("#demo00").animatedModal({
+      modalTarget: 'animatedModal0',
+    // animatedIn: 'zoomIn',
+    // animatedOut: 'bounceOut',
+    // color: '#425BB5',
+      color: '#fff',
+    beforeOpen: function() {
+      var children = $(".thumb");
+      var index = 0;
+      function addClassNextChild() {
+        if (index == children.length) return;
+        children.eq(index++).show().velocity("transition.expandIn", {
+          opacity: 1,
+          stagger: 250
+        });
+        window.setTimeout(addClassNextChild, 200);
+      }
+      addClassNextChild();
+    },
+    afterClose: function() {
+      $(".thumb").hide();
+    }
+  });
+
   //demo 01
   $("#demo01").animatedModal({
       modalTarget: 'animatedModal',
