@@ -211,6 +211,20 @@
                         <!-- portfolio_container -->
                         <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
 
+
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6">
+                                <a id="demo00" href="#animatedModal0" class="portfolio_item"> <img src="img/visa_logo.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Financial Transaction Classifier</span> <em>Finance</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+
+
                             <!-- single work -->
                             <div class="col-md-4 col-sm-6">
                                 <a id="demo01" href="#animatedModal" class="portfolio_item"> <img src="img/price_square.png" alt="image" class="img-responsive" />
@@ -328,6 +342,86 @@
         </div>
     </div>
     <!-- ./contact -->
+
+
+    
+    <div id="animatedModal0">
+        <div class="close-animatedModal0"> <p style="text-align: center;"> <span class="fa fa-close"></span> </p> </div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Financial Transaction Classifier<br /></h2>
+                        <br />
+                        <p style="text-align: center;">  For the full story check out
+                            <a href="https://pierre-m-winter.medium.com/whichbenefit-automating-the-classification-of-employer-benefits-626ab2069a82"> this blog post</a></p><br />
+                        <br />
+                        <div class="separator"><strong>THE BUSINESS PROBLEM</strong></div>
+                        <br />
+                        <p> Have you ever received a benefit package from an employer and felt that it was too
+                            complicated to keep track of your spending amounts? Or can you recall a time when the
+                            benefit reimbursement process was fast and free of hassle?
+
+                            To address these increasingly common problems, the startup
+                            <a href="https://www.getbenepass.com/"> Benepass</a> is combining
+                            employer benefits and stipends on a single payment card in order to simplify and
+                            modernize the benefits process. Benepass has an important pain point: When an employee from
+                            Company X goes to a store and purchases something,
+                            how can Benepass use the transaction data to assign it to a benefit category that the
+                            employee is eligible for?</p>
+                        <br />
+                        <div class="separator"><strong>RESOURCES</strong></div>
+                        <br />
+                        <p> This project was performed as a 4-week independent consulting project, by which I was introduced to Benepass
+                            through the <a href="https://insightfellows.com/data-science"> Insight</a> Data Science Program.
+                            The data given to me by Benepass has a mixture of numerical, text, and categorical features
+                            (green), data which I use for post-processing (yellow), as well as multiple labels (blue).
+                        </p>
+                        <br />
+                        <p><img src="img/example_data.png" alt="" class="img-responsive center" /></p>
+                        <br />
+                        <br />
+                        <p> In general, I overcame 3 significant challenges with this dataset: there were only 3 usable features,
+                        the dataset was very small (350 rows), and the labels were highly imbalanced. To manipulate the data
+                            and train a machine learning model I made use of the SMOTE, Pandas, and Scikit-learn libraries
+                            in Python.
+                        </p>
+                        <br />
+                        <div class="separator"><strong>SOLUTION</strong></div>
+                        <br />
+                        <p> I successfully created a multi-class classification model (called WhichBenefit)
+                            which produces probability
+                            scores for each class, where in most cases the predicted class can be taken as the
+                            class with the highest probability. The model probabilities are then filtered through
+                            a selection of benefits that a given employee is eligible for.
+                            I implemented this data product into a
+                            production-ready Python package which is now implemented in Benepass' live workflow.</p>
+                        <br />
+                        <p><img src="img/eligible_filter.png" alt="" class="img-responsive center" /></p>
+                        <br />
+                        <div class="separator"><strong>IMPACT</strong></div>
+                        <br />
+                        <p> WhichBenefit adds business value by automating the classification of transactions into
+                            benefit categories and by significantly increasing the performance over the
+                            current approach. It also allows for new companies and transactions,
+                            which will help Benepass scale up their production with minimal problems.
+                            As a Python package, it is also adaptable such that the machine learning
+                        model can be retrained and quickly replace the current model in the transaction pipeline. </p>
+                        <br />
+                        <p><img src="img/pipeline.png" alt="" class="img-responsive center45" /></p>
+                        <br />
+                        <br />
+                        <br /> While the code for this process is proprietary, I have a more thorough qualitative
+                        description of the project on <a href="https://pierre-m-winter.medium.com/whichbenefit-automating-the-classification-of-employer-benefits-626ab2069a82"> this blog</a>.
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <div id="animatedModal">
         <div class="close-animatedModal"> <p style="text-align: center;"> <span class="fa fa-close"></span> </p> </div>
